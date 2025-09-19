@@ -1,7 +1,17 @@
 {{>layouts/header}}
-<form action="">
- <input type = "text">
- <textarea></textarea>
- <button type = "submit">Submit</button>
+
+<form class="container"> --- Applying bootstrap CSS
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">content</label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
 {{>layouts/footer}}
