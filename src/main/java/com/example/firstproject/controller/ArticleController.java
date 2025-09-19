@@ -11,13 +11,13 @@ public class ArticleController {
     public String newArticleForm(){
         return "articles/new";
     }
-    @PostMapping("/articles/create")
+/*    @PostMapping("/articles/create")
     public String createArticle(ArticleForm form){
         System.out.println(form.toString());
         //1. Convert DTO to entitiy
         Article article = form.toEntity();
         //2. Save entitiy to DB as a repository
         return "";
-    }
+    } */
 
 }
