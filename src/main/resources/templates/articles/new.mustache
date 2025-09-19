@@ -1,14 +1,14 @@
 {{>layouts/header}}
 
-<form class="container"> --- Applying bootstrap CSS
+<form class="container" action = "/articles/create" method="post"> <!-- Applying bootstrap CSS -->
   <div class="mb-3">
     <label class="form-label">Title</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" name="title">
   </div>
 
   <div class="mb-3">
     <label class="form-label">content</label>
-    <textarea class="form-control" rows="3"></textarea>
+    <textarea class="form-control" rows="3" name="content"></textarea>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
